@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script >
+
+
+   
+function qu1(s)
+      {
+	var fields = s.split('popo');
+	var p = qu2(fields);
+    	document.getElementById("demo1").innerHTML =p;
+}
+
+function qu2(s1)
+	{
+	
+	var i;
+	var text = "";
+	for (i = 0; i < s1.length; i++) { 
+   	 text += s1[i] + "<br>";
+	}
+	
+	return(text);
+}
+
+ function an1(s2)
+      {
+	s2=s2 + '';
+	var fields = s2.split('\n');
+	var p = an2(fields);
+    	document.getElementById("demo2").innerHTML =p;
+}
+
+function an2(s3)
+	{
+	
+	var i;
+	var text = "";
+	for (i = 0; i < s3.length; i++) { 
+   	 text += s3[i] + "<br>";
+	}
+	
+	return(text);
+}
+
+function qu21(ss)
+      {
+	ss=ss + '';
+	var fields = ss.split('popo');
+	var p = qu22(fields);
+    	document.getElementById('demo3').innerHTML =p;
+}
+
+function qu22(s11)
+	{
+	
+	var i;
+	var text = "";
+	for (i = 0; i < s11.length; i++) { 
+   	 text += s11[i] + "<br>";
+	}
+	
+	return(text);
+}
+
+
+ function an21(s2)
+      {
+	s2=s2 + '';
+	var fields = s2.split('\n');
+	var p = an22(fields);
+    	document.getElementById("demo4").innerHTML =p;
+}
+
+function an22(s3)
+	{
+	
+	var i;
+	var text = "";
+	for (i = 0; i < s3.length; i++) { 
+   	 text += s3[i] + "<br>";
+	}
+	
+	return(text);
+}
+   
+</script>
+
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+   
+
+
+<style>
+   body{
+    background: #202a3f;
+   }
+   .container{
+    margin-top: 100px;
+   }
+   .glyphicon-search{
+    font-size: 20px;
+   }
+   .btn-default{
+    background: red;
+    width: 100px;
+    padding: 12.5px;
+   }
+   .form-control{
+    padding: 25px;
+    font-size: 20px;
+   }
+
+   .redtext {
+        color: white;
+	padding: 25px;
+    	font-size: 50px;
+	margin-top: 80px;
+	width: 100px;
+	margin-left: 500px;
+   }
+.whitetextques {
+        color: white;
+	font-size: 15px;
+	margin-top: 30px;
+	padding: 25px;
+	margin-left: 100px;
+	margin-right: 100px;
+   }
+.whitetextans {
+	margin-top: 30px;
+        color: white;
+	font-size: 12px;
+	padding: 25px;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+   }
+.but {
+	margin-top: 30px;
+        color: black;
+	font-size: 12px;
+	padding: 10px;
+	margin-left: 500px;
+	margin-right: 100px;
+	
+   }
+
+  </style>
+</head>
+	
+<body>
+
+
+
+
+<h1 class=whitetextques>Question:</h1>
+
+<p id="demo1" class=whitetextques onclick="qu1({{ques1}})">Question1</p>
+
+<h1 class=whitetextans>Answer:</h1>
+
+<p id="demo2" class=whitetextques onclick="an1({{ans1}})">Answer1</p>
+
+<h1 class=whitetextques>Question:</h1>
+
+<p id="demo3" class=whitetextques onclick="qu21({{ques2}})">Question2</p>
+
+<h1 class=whitetextans>Answer:</h1>
+
+<p id="demo4" class=whitetextques onclick="an21({{ans2}})">Answer2</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
