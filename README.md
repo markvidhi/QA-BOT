@@ -1,2 +1,3 @@
-# CAD
-MINOR PROJECT
+# QA-BOT
+Application of Information Retrieval
+
